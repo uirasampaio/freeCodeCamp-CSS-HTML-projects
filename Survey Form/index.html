@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class=""></header>
+    <main>
+      <!-- flex structure -->
+      <div class="wrapper">
+        <div class="sideline"></div>
+        <div class="sideline2"></div>
+      <!--survey form -->
+        <div class="content">
+      <!-- Title and description -->
+          <h1 id="title"> Survey Form</h1>
+          <p id="description">Hey campers, help freeCodeCamp to improve</p>
+      <!-- form -->
+        <div class="container">
+          <form id="survey-form">
+        <!-- Name -->
+            <div class="row">
+              <div class="label-column">
+                <label id="name-label" for="name">Name*</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+        <!-- Email -->
+            <div class="row">
+              <div class="label-column">
+                <label id="email-label" for="email">Email*</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="email@freecodecamp.com"
+              pattern=".+@globex.com" size="30" required>
+            </div>
+        <!-- Age -->
+            <div class="row">
+              <div class="label-column">
+                <label id="number-label" for="number">How old are you?*</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <input type="number" id="number" name="number" placeholder="Age" required min="10" max="90">
+            </div>
+       <!-- First dropdown -->
+            <div class="row">
+              <div class="label-column">
+                <label for="dropdown">Which option best describes your current role?*</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <select name="dropdown-selection" id="dropdown" required>
+                <option disabled selected value="">Choose one</option>
+                <option value="">Student</option>
+                <option value="">Full time job</option>
+                <option value="">Full time learner</option>
+                <option value="">Prefer not to say</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+      <!-- Radio Buttons -->
+            <div class="row">
+              <div class="label-column">
+                <label>How likely is that you would recommend freeCodeCamp to a friend?*</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <!-- Aria strucure test
+              <div role="radiogroup" aria-labelledby="group_label_1" id="rg1">
+                <h3 id="group_label_1">How likely is that you would recommend freeCodeCamp to a friend?*</h3>
+                <div class="radio" role="radio" aria-checked="false" tabindex="0">Definitely</div>
+                <div class="radio" role="radio" aria-checked="false" tabindex="-1">Maybe</div>
+                <div class="radio" role="radio" aria-checked="false" tabindex="-1">Not sure</div>
+              </div>
+             end -->
+              <ul id="radiobuttom">
+                <li class="radio"><input type="radio" name="radio" value="Definitely"><label> Definitely</label></li>
+                <li class="radio"><input type="radio" name="radio" value="Maybe"><label> Maybe</label></li>
+                <li class="radio"><input type="radio" name="radio" value="Not Sure"><label> Not sure</label></li>
+              </ul>
+            </div>
+      <!-- Second dropdown -->
+            <div class="row">
+              <div class="label-column">
+                <label for="second-dropdown">What do you like most in FCC*:</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <select name="dropdown" id="second-dropdown">
+                <option disabled selected value="Choose One">Choose one</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+              </select>
+            </div>
+    <!-- checkbox -->
+            <div class="row">
+              <div class="label-column">
+                <label for="number">Things that should be
+                  improved in the future(Check all that apply):</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <ul id="checkbox">
+                <li class="checkbox"><input type="checkbox" name="radio" value="Front-End Projects"><label>Front-End Projects</label></li>
+                <li class=""><input type="checkbox" name="radio" value="Back-end Projects"><label>Back-End Projects</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Data Visualization"><label>Data Visualization</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Challenges"><label>Challenges</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Open Source Community"><label>Open Source Community</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Gitter help rooms"><label>Gitter help rooms</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Videos"><label>Videos</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Wiki"><label>Wiki</label></li>
+                <li class="radio"><input type="checkbox" name="radio" value="Forum"><label>Forum</label></li>
+                <li class=""><input type="checkbox" name="radio" value="Additional Courses"><label>Additional Courses</label></li>
+              </ul>
+            </div>
+    <!-- Text comment -->
+            <div class="row">
+              <div class="label-column">
+                <label for="number">Any comments or suggestions?</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <textarea name="comment" id="comments" cols="30" rows="10"
+              placeholder="Enter your comment here..." style="height:50px;resize:vertical;"></textarea>
+            </div>
+          <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </main>
+    <footer class=""></footer>
+    <script src="test.js"></script>
+  </body>
+</html>

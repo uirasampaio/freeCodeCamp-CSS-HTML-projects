@@ -1,0 +1,45 @@
+body, html {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+
+
+/* footer */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.footer, .push {
+  height: 50px;
+}
+.footer {
+  background-color: black;
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(184,177,184,1);
+  -moz-box-shadow: 0px -5px 10px 0px rgba(184,177,184,1);
+  box-shadow: 0px -5px 10px 0px rgba(184,177,184,1);
+}
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+.footer-container li {
+  list-style-type: none;
+  float: right;
+  display: inline;
+  padding: 30px 20px 0px 0px;
+  word-spacing: 50px;
+
+}
+.footer-container a {
+  color: white;
+  font-size: 25px;
+}
+.footer-text p{
+  float: left;
+  color: white;
+  font-size: 12px;
+  padding: 10px 0px 0px 20px;
+}

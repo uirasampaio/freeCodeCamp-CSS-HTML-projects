@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Project 3 - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav id="nav-bar" class="navbar">
+        <div id="myTopnav" class="topnav">
+          <img id="header-img" src="https://image.flaticon.com/icons/svg/1691/1691208.svg" alt="">
+          <a class="nav-link" tabindex="0" href="#features">Features</a>
+          <a class="nav-link" tabindex="0" href="#howitworks">How it works</a>
+          <a class="nav-link" tabindex="0" href="#pricing">Pricing</a>
+          <a class="nav-link" tabindex="0" href="#contact">Contact</a>
+          <a id="menu-bar" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- main content -->
+    <main>
+      <div id="container">
+        <!--input container -->
+        <div id="box-input">
+          <div class="form-box">
+            <div class="toptext">
+              <h1 id="title">Coffee capsules change the way we drink coffee</h1><br>
+              <p id="description">Now, it's time to change the way we use coffee capsules.<br> Reusable coffee capsules are here to stay!</p>
+            </div>
+        <!-- form -->
+            <div class="form-div">
+              <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+                <input id="email" name="email" type="email" placeholder="Enter your email">
+                <div class="sucker">
+                  <input id="submit" type="submit" value="Submit" class="btn">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+        <!-- Features and benefits-->
+        <div id="features">
+          <div>
+            <h2> Reusable coffee capsules have amazing benefits</h2>
+            <i class="fa fa-coffee"></i>
+            <div class="features">
+              <div class="features-box">
+                <div class="img-holder">
+                  <img src="https://image.flaticon.com/icons/svg/1691/1691208.svg" alt="coffee beans baggie">
+                </div>
+                <div class="content-box">
+                  <p><strong>More Choices.</strong> One of the biggest advantages of
+                    using refillable is the way in which you can choose from just about
+                    any coffee on the face of the earth.</p>
+                </div>
+              </div>
+              <div class="features-box">
+                <div class="img-holder">
+                  <img src="https://image.flaticon.com/icons/svg/525/525903.svg" alt="ecologic world">>
+                </div>
+                <div class="content-box">
+                  <p><strong>Less Waste,</strong> many would also say that as the
+                    refillable coffee pods don’t have to be discarded after use,
+                    they’re far better for the environment</p>
+                </div>
+              </div>
+              <div class="features-box">
+                <div class="img-holder">
+                  <img src="https://image.flaticon.com/icons/svg/1611/1611261.svg" alt="saving money">
+                </div>
+                <div class="content-box">
+                  <p><strong>Save Money.</strong> Using reusable you can save
+                    up to 85% compared to the usual single-use.</p>
+                </div>
+              </div>
+            </div>
+            <img class="ender" src="https://image.flaticon.com/icons/svg/1676/1676972.svg" alt="coffee beans">
+          </div>
+        </div>
+        <!-- video box -->
+        <div id="howitworks">
+          <iframe id="video" tabindex="0" width="320" height="240" src="https://www.youtube.com/embed/MeynIrkC-TM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- products -->
+        <div id="pricing">
+          <div class="second-container">
+            <div class="product1">
+              <h3> Best Buy</h3>
+              <img class="product-img" src="https://image.flaticon.com/icons/svg/1727/1727549.svg" alt="best seller">
+              <p class="product-description"><strong>Includes</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ut repellat delectus, itaque fuga nesciunt.</p>
+              <p class="price-tag">$55</p>
+              <button tabindex="0">Get yours!</button>
+            </div>
+            <div class="product2">
+              <h3>Starter pack</h3>
+              <img class="product-img" src="https://image.flaticon.com/icons/svg/129/129501.svg" alt="starter">
+              <p class="product-description"><strong>Includes</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti aspernatur maxime esse dicta exercitationem. </p>
+              <p class="price-tag">$40</p>
+              <button tabindex="0">Get yours!</button>
+            </div>
+            <div class="product3">
+              <h3>Economic Version</h3>
+              <img class="product-img" src="https://image.flaticon.com/icons/svg/265/265698.svg" alt="economic version">
+              <p class="product-description"><strong>Includes</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo hic explicabo delectus et corrupti quae.</p>
+              <p class="price-tag">$20</p>
+              <button tabindex="0">Get yours!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div id="contact" class="footer-container">
+        <span>Copyright 2019, Waycap Refillable</span>
+      </div>
+     </footer>
+    <script src="nav.js"></script>
+  </body>
+</html>

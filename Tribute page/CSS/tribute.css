@@ -1,0 +1,192 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+body, html {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+
+
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+header {
+  width: 100%;
+  background-color: #006400;
+  height: 50px;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.iconify {
+  font-size: 40px;
+  padding-left: 15px;
+  padding-top: 5px;
+  color: white;
+}
+
+/* main */
+
+main {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 15px;
+}
+#tribute-info {
+  padding-left:20px;
+  padding-right:20px;
+  width: 550px;
+  margin: 0 auto;
+
+  white-space: normal;
+}
+
+
+
+
+#image {
+  max-width:95%;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 34px -5px rgba(71,70,65,1);
+  -moz-box-shadow: 10px 10px 34px -5px rgba(71,70,65,1);
+  box-shadow: 10px 10px 34px -5px rgba(71,70,65,1);
+}
+
+#img-div {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+#title {
+  font-size: 1.5em;
+}
+#img-caption {
+  color: black;
+  padding: 0px 10px 5px 10px;
+}
+
+.inside-text {
+  padding-top: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 span {
+   color: white;
+   font: bold 4vw 'Roboto', Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  #tribute-info {width: 350px;}
+}
+
+@media screen and (min-width: 768px) {
+  #tribute-info {
+    width:500px;
+  }
+  }
+
+
+
+
+@media screen and (min-width: 992px) {
+  #tribute-info p {
+    font-size: 22px;
+  }
+  #tribute-info {width: 700px;}
+}
+
+
+#tribute-info p {
+
+  line-height: 1.3em;
+  text-align: start;
+
+}
+blockquote {
+  width: 100%;
+  max-width:1170px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 50px;
+  border-left:8px solid #1abc9c;
+  border-right: 3px solid #1abc9c;
+  box-shadow: 2px 2px 15px #ccc;
+  position: relative;
+  color: #2c3e50;
+  line-height: 1.3em;
+  text-align: justify;
+
+        }
+blockquote:before {
+    content: "\201C";
+    font-size: 30px;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: #757575;
+    left:10px;
+    top:26px;
+}
+
+
+
+/* footer */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+.footer,
+.push {
+  height: 80px;
+}
+.footer {
+  background-color: black;
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(184,177,184,1);
+  -moz-box-shadow: 0px -5px 10px 0px rgba(184,177,184,1);
+  box-shadow: 0px -5px 10px 0px rgba(184,177,184,1);
+}
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+.footer-container li {
+  list-style-type: none;
+  float: right;
+  display: inline;
+  padding: 30px 20px 0px 0px;
+  word-spacing: 50px;
+
+}
+.footer-container a {
+  color: white;
+  font-size: 1em;
+}
+.footer-text p{
+  float: left;
+  color: white;
+  font-size: 12px;
+  padding: 10px 0px 0px 20px;
+}
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
