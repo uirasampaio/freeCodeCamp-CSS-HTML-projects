@@ -1,6 +1,7 @@
 // "myFunction" is a courtesy of w3schools
 function myFunction() {
-  "use strict"
+  'use strict'
+
   const responsiveNav = document.getElementById('myTopnav');
   if (responsiveNav.className === 'topnav') {
     responsiveNav.className += ' responsive';
@@ -10,6 +11,8 @@ function myFunction() {
 };
 
 (function displayEvent() {
+  'use strict'
+
   const btnClose = document.querySelector('#close-btn');
   const btnOpen = document.querySelector('#display-btn');
   const hidden = document.querySelector('.hidden-div');
@@ -26,13 +29,14 @@ function myFunction() {
 }());
 
 // will trigger the actions on the menu
-function responsive() {
+(function responsive() {
+  'use strict'
+  
   const nav = document.querySelectorAll('.nav-link');
   nav.forEach((btn) => {
     btn.addEventListener("click", () => {
       "use strict"
       myFunction();
-    })
-}, true);};
-
-responsive();
+    });
+  }, true)
+}());
