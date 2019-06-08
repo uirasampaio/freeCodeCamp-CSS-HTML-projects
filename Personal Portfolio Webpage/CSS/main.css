@@ -16,7 +16,7 @@ main {
   margin-bottom: 45px;
 }
 /* Nav */
-.navbar {
+.nav-bar {
   overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
@@ -40,6 +40,10 @@ main {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+.active {
+  color: #4CAF50;
+  color: white;
 }
 .topnav .icon {
   display: none;
